@@ -10,9 +10,7 @@ import { RouterOutlet } from '@angular/router';
 export class App implements OnInit {
   protected title = 'deploy-github-aws';
   ngOnInit(): void {
-    // const hola: string = "";
-    throw new Error('Method not implemented.')
-
-    ;
+    // const hola: string = '';
+    throw new Error('Method not implemented.');
   }
 }
