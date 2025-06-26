@@ -34,7 +34,7 @@ jobs:
       # --delete flag removes files in the bucket that are not in the local folder
       - name: Deploy to S3
         run: |
-          aws s3 sync dist/angular-deploy-github-aws/browser/ s3://$S3_BUCKET_NAME --delete
+          aws s3 sync dist/angular-deploy-github/browser/ s3://$S3_BUCKET_NAME --delete
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
